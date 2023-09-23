@@ -3,3 +3,5 @@ venv/
 *.zip
 *.png
 .DS_Store
+build/
+dist/
