@@ -4,6 +4,10 @@
 #
 #    pip-compile requirements.in
 #
+altgraph==0.17.3
+    # via
+    #   macholib
+    #   pyinstaller
 certifi==2023.7.22
     # via requests
 charset-normalizer==3.2.0
@@ -14,8 +18,12 @@ gooey==1.0.8.1
     # via -r requirements.in
 idna==3.4
     # via requests
+macholib==1.16.2
+    # via pyinstaller
 numpy==1.26.0
     # via wxpython
+packaging==23.1
+    # via pyinstaller
 pillow==10.0.1
     # via
     #   gooey
@@ -24,6 +32,10 @@ psutil==5.9.5
     # via gooey
 pygtrie==2.5.0
     # via gooey
+pyinstaller==6.0.0
+    # via -r requirements.in
+pyinstaller-hooks-contrib==2023.8
+    # via pyinstaller
 requests==2.31.0
     # via -r requirements.in
 six==1.16.0
@@ -32,3 +44,6 @@ urllib3==2.0.4
     # via requests
 wxpython==4.2.1
     # via gooey
+
+# The following packages are considered to be unsafe in a requirements file:
+# setuptools
